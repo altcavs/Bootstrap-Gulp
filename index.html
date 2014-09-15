@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html ng-app="demoApp" lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,48 +16,57 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body >
 
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand">1С: Помощник</div>
-        </div>
-        <div class="collapse navbar-collapse" id="collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Новости</a></li>
-                <li ><a href="#">Кадры</a></li>
-                <li><a href="#">Зарплата</a></li>
-                <li><a href="#">Документооборот</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">1С: Помощник</div>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#/staff">Кадры</a></li>
+                    <li><a href="#/staff">Зарплата</a></li>
+                    <li><a href="#">Документооборот</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Кудрявцев <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Кудрявцев <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-2 blog-sidebar">
                 <div class="sidebar-module">
-                    <h4>Archives</h4>
+                    <h4>Новости</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">March 2014</a></li>
+                        <li><a href="#">February 2014</a></li>
+                        <li><a href="#">January 2014</a></li>
+                        <li><a href="#">December 2013</a></li>
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Архив</h4>
                     <ol class="list-unstyled">
                         <li><a href="#">March 2014</a></li>
                         <li><a href="#">February 2014</a></li>
@@ -74,43 +83,26 @@
                     </ol>
                 </div>
                 <div class="sidebar-module">
-                    <h4>Elsewhere</h4>
+                    <h4>Дополнительно</h4>
                     <ol class="list-unstyled">
                         <li><a href="#">GitHub</a></li>
                         <li><a href="#">Twitter</a></li>
                         <li><a href="#">Facebook</a></li>
                     </ol>
                 </div>
-            </div><!-- /.blog-sidebar -->
-            <div class="col-sm-10">
-                <div class="jumbotron">
-                    <h1>1С Предприятие</h1>
-                    <p>Это сайт помощи для пользователей 1С УПП.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Кадровый учет</h2>
-                        <p>Кадровый учет - это документированный учет движения персонала организации, связанный с оформлением трудовых отношений, приема, перемещения, увольнения и организации труда. На работодателей – индивидуальных предпринимателей возлагаются практически все права и обязанности работодателей – юридических лиц (организаций) со всеми вытекающими из этого последствиями.Ведение кадрового учета является обязанностью любой организации вне не зависимости от ее формы собственности,  размера и применяемой системы налогообложения.</p>
-                        <p>Правильность ведения и оформления учетных документов контролируется инспекциями по труду, а также частично налоговыми органами и внебюджетными фондами. Ведение кадрового учета, в соответствии с законодательством, подразумевает под собой оформления большого количества документов, фиксирующих трудовые отношения работника и работодателя. И практически любой из этих документов может быть затребован при проведении проверки Гострудинспекцией,  или налоговая инспекция и внебюджетными фондами.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Расчет заработной платы</h2>
-                        <p>
-                            Конфигурация позволяет производить расчет регламентированной и управленческой заработной платы.
-                            Под регламентированной заработной платой в конфигурации понимается заработная плата, начисляемая сотрудникам организаций в соответствии с условиями трудового и коллективного договора.
-                            Расчет регламентированной заработной платыведется в валюте регламентированного учета, а ее результаты учитываются для целей налогооблажения НДФЛ, обложения страховыми взносами и отображаются в бухгалтерском и налоговом учете.
-                            Под управленеской заработной платой в конфигурации понимается заработная плата сотрудников организации или предприятия для целей управленческого учета. Управленчиская зарплата может расчитыватся в любой валюте.
-                            Результаты управленчиской зарплаты используются для учета затрат на персонал по центрам ответственности.
-                        </p>
-                    </div>
             </div>
+            <div class="col-sm-10" ng-view ></div>
         </div><!-- /.row -->
 
     </div><!-- /.container -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-2.1.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers.js"></script>
 </body>
 </html>
