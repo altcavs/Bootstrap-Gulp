@@ -17,7 +17,7 @@ gulp.task('html', function () {
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
+    return gulp.src('app/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -50,7 +50,7 @@ gulp.task('webserver', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     //gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('js/*.js', ['lint']);
+    gulp.watch('app/*.js', ['lint']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch(['./*.html'], ['html']);
 });
