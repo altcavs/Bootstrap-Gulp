@@ -159,3 +159,36 @@ body {
 }
 
 // http://beer2code.com/themes/core-admin-3/pages/dashboard/dashboard.html
+
+// http://ashobiz.asia/onecolor31/blue/index.html
+
+/* Sidebar */
+.padd{ padding: 10px; }
+
+.sidebar h3{
+  font-size:24px;
+  margin-bottom:8px;
+  cursor:pointer;
+  padding-bottom:8px;
+  border-bottom:1px solid #ddd;
+}
+
+.sidebar ul{
+  list-style-type:none;
+  margin:0px;
+  margin-left:-40px;
+}
+
+.sidebar li{
+  padding:4px 0px;
+  border-bottom:1px dashed #ddd;
+}
+
+.sidebar a, .sidebar a:visited, .sidebar a:hover{
+  color:#666;
+  text-decoration:none;
+}
+
+.widget{
+  padding:10px 0px;
+}
