@@ -1,29 +1,9 @@
-/* Controllers */
-var demoAppControllers = angular.module('demoApp.controllers', ['demoApp.services']);
-
-demoAppControllers.controller('navbarCtrl', ['$scope', '$location', function($scope, $location) {
-    $scope.highlight = function (path) {
-        return $location.path().substr(0, path.length) == path;
-    };
-}]);
-
-demoAppControllers.controller('newsCtrl', ['$scope','newsData',function($scope, newsData) {
-    $scope.news = newsData.query();
-    //console.log($scope.news);
-
-}]);
-
-demoAppControllers.controller('staffCtrl', [function() {
-}]);
-
-demoAppControllers.controller('salaryCtrl', [function() {
-}]);
-
-demoAppControllers.controller('docflowCtrl', [function() {
-}]);
+/* Directives */
+var demoAppDirectivess = angular.module('demoApp.directives', []);
 
 
-demoAppControllers.directive('autoActive', ['$location', function ($location) {
+
+demoAppDirectivess.directive('autoActive', ['$location', function ($location) {
     return {
         restrict: 'A',
         scope: false,

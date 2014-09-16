@@ -42,11 +42,11 @@ body {
   color: white; }
 
 .navbar-custom .dropdown-menu, .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
-  background-color: #46aaed;
+  background-color: #428bca;
   color: white; }
 
 .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover {
-  background-color: #428bca;
+  background-color: #46aaed;
   color: white; }
 
 /* Sidebar modules for boxing content */

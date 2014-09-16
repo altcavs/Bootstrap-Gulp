@@ -3,6 +3,7 @@ $nav_select_color: #46aaed;
 
 body {
   padding-top: 65px;
+  //background-color: #faf0fe;
 }
 
 /*
@@ -65,12 +66,12 @@ body {
 }
 .navbar-custom .dropdown-menu,
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a{
-  background-color: $nav_select_color;
+  background-color: $nav_color;
   color: white;
 }
 
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover{
-  background-color: $nav_color;
+  background-color: $nav_select_color;
   color: white;
 }
 
