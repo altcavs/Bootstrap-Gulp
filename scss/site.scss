@@ -3,7 +3,7 @@ $nav_select_color: #46aaed;
 
 body {
   padding-top: 65px;
-  //background-color: #faf0fe;
+  background-color: #F6F6F6;
 }
 
 /*
@@ -91,6 +91,71 @@ body {
   margin-bottom: 0;
 }
 
+// http://foxypixel.net/cleanzone/pages-login.html
+
+.white-box {
+  background: #FFF;
+}
+
+.widget-block {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.21);
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.widget-block .padding {
+  padding: 20px 20px;
+}
 
 
+.block .header,
+.widget-block .header,
+.block-flat .header {
+  padding: 10px;
+  background-color: #FEFEFE;
+  border-bottom: 1px solid #dadada;
+}
 
+.block-flat,
+.block-wizard {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: #FFF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+}
+.block-flat .header {
+  background: transparent;
+  padding: 3px 0;
+}
+
+.block-flat .header.no-border {
+  border: 0;
+}
+.block-flat .header h3 {
+  margin-top: 3px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 200;
+}
+.block-flat .content {
+  padding: 15px 3px 0 3px;
+}
+.block-flat .content.full-width {
+  padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.block-flat .content h4 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.block-flat .content .title {
+  margin: 5px 0 15px 0;
+}
+
+// http://beer2code.com/themes/core-admin-3/pages/dashboard/dashboard.html
