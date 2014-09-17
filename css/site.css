@@ -119,6 +119,9 @@ body {
 .block-flat .content .title {
   margin: 5px 0 15px 0; }
 
+.block-flat .footer.pull-right {
+  margin-bottom: 10px; }
+
 /* Sidebar */
 .padd {
   padding: 10px; }
