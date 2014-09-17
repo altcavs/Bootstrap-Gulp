@@ -122,6 +122,25 @@ body {
 .block-flat .footer.pull-right {
   margin-bottom: 10px; }
 
+.news-title {
+  color: #636364;
+  font-weight: 600;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  font-size: 18px; }
+
+.news-title a {
+  color: #78808a; }
+
+.news-title a:hover, a:active, a:focus {
+  cursor: pointer;
+  outline: 0px none;
+  text-decoration: none;
+  color: #5a6573; }
+
+.news-content {
+  margin-bottom: 10px;
+  padding-left: 10px; }
+
 /* Sidebar */
 .padd {
   padding: 10px; }

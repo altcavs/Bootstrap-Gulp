@@ -1,45 +1,18 @@
 
-
-    <div class="block-flat">
+    <div class="block-flat" ng-repeat="sub in subcategories[0].subcategories">
         <div class="header">
-            <h4>Учет персональных данных</h4>
+            <h3>{{sub.title}}</h3>
         </div>
         <div class="content">
-            <div>
-                <a href="">Ведение штатного расписания</a>
-                <p>Порядок ведения штатного расписания в программах "1С" и оформление штатного расписания по унифицированной форме №Т-3.</p>
-            </div>
-            <div>
-                <a href="">Оформление приема на работу</a>
-                <p>Порядок регистрации приема на работу в программах "1С" и оформление приказа о приеме работника (работников) на работу по унифицированным формам №Т-1, №Т-1а.</p>
-            </div>
-        </div>
-    </div>
-    <div class="block-flat">
-        <div class="header">
-            <h4>Учет отпусков и командировок</h4>
-        </div>
-        <div class="content">
-                <div>
-                    <a href="">Учет права на отпуск и расчет остатков отпусков в программе</a>
-                    <p>Порядок ведения штатного расписания в программах "1С" и оформление штатного расписания по унифицированной форме №Т-3.</p>
+            <div ng-repeat="art in sub.articles">
+                <div class="news-title">
+                    <a href="">{{art.title}}</a>
                 </div>
+                <div class="news-content">
+                    {{art.description}}
+                </div>
+            </div>
         </div>
-    </div>
-
-
-
-    <div class="block-flat">
-        <div class="header">
-            <h4>Учет персональных данных</h4>
-        </div>
-        <div class="content"></div>
-    </div>
-    <div class="block-flat">
-        <div class="header">
-            <h4>Учет отпусков и командировок</h4>
-        </div>
-        <div class="content"></div>
     </div>
 
 

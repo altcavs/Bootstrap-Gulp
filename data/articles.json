@@ -2,7 +2,7 @@
     {
         "id": "staff",
         "title": "Кадры",
-        "subcategory": [
+        "subcategories": [
             {
                 "id": "staff_1",
                 "title": "Non ullamco non proident consectetur Lorem id excepteur tempor adipisicing cillum ea ex ut ea.",
@@ -128,7 +128,7 @@
     {
         "id": "salary",
         "title": "Зарплата",
-        "subcategory": [
+        "subcategories": [
             {
                 "id": "salary_1",
                 "title": "Elit dolor cupidatat non ullamco. Nulla pariatur elit enim adipisicing.",
@@ -284,7 +284,7 @@
     {
         "id": "doc",
         "title": "Документооборот",
-        "subcategory": [
+        "subcategories": [
             {
                 "id": "doc_1",
                 "title": "Enim voluptate pariatur laborum eu labore pariatur enim id incididunt laboris ea ad esse. Non cillum sint non ullamco eu minim ipsum.",

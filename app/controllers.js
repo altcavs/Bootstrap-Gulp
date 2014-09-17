@@ -13,7 +13,10 @@ demoAppControllers.controller('newsCtrl', ['$scope','newsData',function($scope, 
 
 }]);
 
-demoAppControllers.controller('staffCtrl', [function() {
+demoAppControllers.controller('staffCtrl', ['$scope','articlesData', function($scope, articlesData) {
+    $scope.subcategories =[];
+    $scope.subcategories = articlesData.query();
+
 }]);
 
 demoAppControllers.controller('salaryCtrl', [function() {
