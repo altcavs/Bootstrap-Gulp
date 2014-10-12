@@ -2,13 +2,15 @@
 var demoAppControllers = angular.module('demoApp.controllers', ['demoApp.services']);
 
 demoAppControllers.controller('navbarCtrl', ['$scope', '$location', function($scope, $location) {
+
     $scope.highlight = function (path) {
         return $location.path().substr(0, path.length) == path;
     };
 }]);
 
-demoAppControllers.controller('newsCtrl', ['$scope','newsData',function($scope, newsData) {
-    $scope.news = newsData.query();
+demoAppControllers.controller('newsCtrl', ['newsData',function(newsData) {
+    var vm = this;
+    vm.news = newsData.query();
     //console.log($scope.news);
 
 }]);
@@ -44,9 +46,7 @@ demoAppControllers.directive('autoActive', ['$location', function ($location) {
                     });
                 }
             }
-
             setActive();
-
             scope.$on('$locationChangeSuccess', setActive);
         }
     };
