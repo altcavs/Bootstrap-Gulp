@@ -6,6 +6,11 @@ demoAppServices.factory('newsData',['$resource', function ($resource) {
         query: {method:'GET', params:{}, isArray:true}
     });
 }]);
+demoAppServices.factory('menuData',['$resource', function ($resource) {
+    return $resource('data/menu.json', {}, {
+        query: {method:'GET', params:{}, isArray:true}
+    });
+}]);
 
 demoAppServices.factory('articlesData',['$resource', function ($resource) {
     return $resource('data/articles.json', {}, {

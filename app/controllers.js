@@ -8,6 +8,13 @@ demoAppControllers.controller('navbarCtrl', ['$scope', '$location', function($sc
     };
 }]);
 
+demoAppControllers.controller('menuCtrl', ['menuData',function(menuData) {
+    var vm = this;
+    vm.menu = menuData.query();
+    //console.log($scope.news);
+
+}]);
+
 demoAppControllers.controller('newsCtrl', ['newsData',function(newsData) {
     var vm = this;
     vm.news = newsData.query();
