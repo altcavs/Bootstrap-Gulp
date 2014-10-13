@@ -11,6 +11,11 @@ var app = angular.module('demoApp', ['ui.router', 'demoApp.controllers', 'demoAp
                 templateUrl: "app/partials/news.html",
                 controller:  "newsCtrl as vm"
             })
+            .state("subcategory", {
+                url: "/subcategory/:subId",
+                templateUrl: "app/partials/subcategory.html",
+                controller:  "subcategoryCtrl as vm"
+            })
             .state("staff", {
                     url: "/staff",
                     templateUrl: "app/partials/staff.html",

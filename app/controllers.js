@@ -21,6 +21,12 @@ demoAppControllers.controller('newsCtrl', ['newsData',function(newsData) {
     //console.log($scope.news);
 
 }]);
+demoAppControllers.controller('subcategoryCtrl', ['newsData',function(newsData) {
+    var vm = this;
+    vm.news = newsData.query();
+    //console.log($scope.news);
+
+}]);
 
 demoAppControllers.controller('staffCtrl', ['$scope','articlesData', function($scope, articlesData) {
     $scope.subcategories =[];
