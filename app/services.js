@@ -7,7 +7,7 @@ demoAppServices.factory('newsData',['$resource', function ($resource) {
     });
 }]);
 demoAppServices.factory('menuData',['$resource', function ($resource) {
-    return $resource('api/menu');
+    return $resource('/api/menu');
 }]);
 
 demoAppServices.factory('articlesData',['$resource', function ($resource) {
