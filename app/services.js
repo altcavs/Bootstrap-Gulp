@@ -1,5 +1,5 @@
 
-var demoAppServices = angular.module('demoApp.services', ['ngResource']);
+var demoAppServices = angular.module('demoApp.services', ['ngResource', 'demoApp.mock']);
 
 demoAppServices.factory('newsData',['$resource', function ($resource) {
     return $resource('data/news.json', {}, {
@@ -7,9 +7,7 @@ demoAppServices.factory('newsData',['$resource', function ($resource) {
     });
 }]);
 demoAppServices.factory('menuData',['$resource', function ($resource) {
-    return $resource('data/menu.json', {}, {
-        query: {method:'GET', params:{}, isArray:true}
-    });
+    return $resource('api/menu');
 }]);
 
 demoAppServices.factory('articlesData',['$resource', function ($resource) {
