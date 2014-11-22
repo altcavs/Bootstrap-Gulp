@@ -1,8 +1,9 @@
+/// <vs BeforeBuild='less, html' />
 // Include gulp
-var gulp = require('gulp');
+var gulp=require('gulp');
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var less = require('gulp-less');
+var jshint=require('gulp-jshint');
+var less=require('gulp-less');
 
 var connect = require('gulp-connect');
 /*

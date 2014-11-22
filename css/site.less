@@ -11,7 +11,7 @@ body {
  * Navbar
  */
 .navbar-custom {
-  background-color: $nav_color;
+  background-color: @nav_color;
   color: white;
 }
 .navbar-custom .navbar-brand,
@@ -27,13 +27,13 @@ body {
 .navbar-custom .navbar-nav>.active>a:hover
 {
   color: white;
-  background-color: $nav_select_color;
+  background-color: @nav_select_color;
 }
 
 .navbar-custom .navbar-nav>.active>a,
 .navbar-custom .navbar-nav>.active>a:hover,
 .navbar-custom .navbar-nav>.active>a:focus{
-  background-color: $nav_color;
+  background-color: @nav_color;
 
 }
 
@@ -61,18 +61,18 @@ body {
 .navbar-custom .navbar-nav>.open>a,
 .navbar-custom .navbar-nav>.open>a:hover,
 .navbar-custom .navbar-nav>.open>a:focus{
-  background-color: $nav_select_color;
+  background-color: @nav_select_color;
   color: white;
 
 }
 .navbar-custom .dropdown-menu,
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a{
-  background-color: $nav_color;
+  background-color: @nav_color;
   color: white;
 }
 
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover{
-  background-color: $nav_select_color;
+  background-color: @nav_select_color;
   color: white;
 }
 
@@ -103,15 +103,14 @@ body {
 
 .block-flat,
 .block-wizard {
-  margin-bottom: 20px;
-  padding: 20px 20px;
-  background: #FFF;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-left: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-  border-bottom: 1px solid #e2e2e2;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background: #FFF;
+    border-radius: 3px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
 }
 .block-flat .header {
   background: transparent;
@@ -162,7 +161,7 @@ body {
   color: #78808a; }
 .news-title a:hover, a:active, a:focus {
   cursor: pointer;
-  outline: 0px none;
+  outline: 0 none;
   text-decoration: none;
   color: #5a6573; }
 .news-content {
@@ -185,12 +184,12 @@ body {
 
 .sidebar ul{
   list-style-type:none;
-  margin:0px;
+  margin:0;
   margin-left:-20px;
 }
 
 .sidebar li{
-  padding:4px 0px;
+  padding:4px 0;
   border-bottom:1px dashed #ddd;
 }
 
@@ -200,7 +199,7 @@ body {
 }
 
 .widget{
-  padding:10px 0px;
+  padding:10px 0;
 }
 
 
@@ -213,16 +212,15 @@ body {
 
 /* By default it's not affixed in mobile views, so undo that */
 .bs-sidebar.affix {
-  position: static;
-  margin-bottom: 20px;
-  padding: 20px 20px;
-  background: #FFF;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-left: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-  border-bottom: 1px solid #e2e2e2;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+    position: static;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background: #FFF;
+    border-radius: 3px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
 }
 
 /* First level of nav */
